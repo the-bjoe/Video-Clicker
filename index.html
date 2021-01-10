@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Video Clicker</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div class="left">
+            <button type="button" id="button" onclick="ButtonClick()"><label>Click</label><label id="text">0</label></button>
+        </div>
+        <div class="right">
+            <div class="videoFrame">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <input type="text" id="urlInput" onclick="this.select()" placeholder="YouTube URL"><button type="button" id="submit" onclick="SubmitClick()">Enter</button>
+        </div>
+    </body>
+</html>
